@@ -1,0 +1,17 @@
+﻿@page "/costest"
+@inject ILogger<CosTest> Logger;
+@using System.Web
+
+<h1>CosTest</h1>
+
+<p>CosFixed Test, Count: @CosFixedCount, Value: @CosFixedValue.ToString("F3")</p>
+<button class="btn btn-primary" @onclick="TestCosFixed">click me to test CosFixed</button>
+
+<p></p>
+<p>CosDict Test, Count: @CosDictCount </p>
+<button class="btn btn-primary" @onclick="TestCosDict">click me to add a CosDict to list</button>
+
+<p></p>
+<p>CosDict Test1, kv pair: @(CosDict1.ToString()) </p>
+<button class="btn btn-primary" @onclick="TestCosDict1">click me to test CosDict</button>
+
